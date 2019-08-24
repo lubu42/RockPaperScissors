@@ -102,5 +102,13 @@ function Game(){
         console.log("This round the Player choice was: " + playerSelection);
         console.log("and the Computer choice was: "+ computerSelection);
         console.log("The score so far is - Player: " + playerScore + " x " + "Computer: " + computerScore);
+
+    }
+
+    if (computerScore > playerScore){
+        console.log("The computer is the winner with the final score of " + computerScore + " to " + playerScore);
+    }
+    else if (playerScore > computerScore){
+        console.log("You are the winner with the final score of " + playerScore + " to " + computerScore);
     }
 }
